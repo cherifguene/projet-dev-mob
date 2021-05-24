@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Imc Calculator</title>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1 role="header">IMC Calculator</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <form action="" class="form-group">
+                <label for="taille" class="for">Taille</label><input type="number" id="taille" class="form-control"><br>
+                <label for="poids">poids</label><input type="number" id="poids" class="form-control"><br>
+                <input type="button" value="Calculer" onclick="calculIMC()" class="btn btn-block btn-success">
+            </form><br>
+            <p id="diagnostique"> </p> 
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <p>My footer | &copy; M2SRT 2021</p>
+        </div>
+    </div>
+</body>
+</html>
